@@ -19,68 +19,63 @@
             display:flex;
             justify-content: space-between;
             height: 100px;
+            position: relative;
+            animation: slideIn;
         }
+         @keyframes slideIn{
+            from{
+                top: -200px;
+                opacity: 0;
+            }
+            to{
+                top: 0%;
+                opacity: 1;
+            }
+        } 
 
         .container2{
             display: flex;
             gap:30px;
             justify-content: space-between;
-        }
-        
-        .one{
-            color: white;         
+            color: white;
+            cursor: pointer;
         }
 
-        .one:hover{
+        #one:hover{
             color: aqua;
             transition: all in 0.4s;
             cursor: pointer;
          }
 
-         .two{
-            color: white;
-         }
-
-         .two:hover{
+         #two:hover{
             color:aqua;
             cursor: pointer;
+            transition: all in 0.4s;
          }
 
-         .three{           
-            color: white;
-         }
-
-         .three:hover{
+         #three:hover{
             color: aqua;
             cursor: pointer;
+            transition: all in 0.4s;
          }
 
-         .four{
-            color: white;
-         }
-
-         .four:hover{
+         #four:hover{
             color: aqua;
             cursor: pointer;
+            transition: all in 0.4s;
          }
 
-         .five{
-            color: white;    
-         }
-
-         .five:hover{
+         #five:hover{
             color: aqua;
             cursor: pointer;
+            transition: all in 0.4s;
          }
 
-         .six{
-            color: white;
-         }
-
-         .six:hover{
+         #six:hover{
             color: aqua;
             cursor: pointer;
-         }
+            transition: all in 0.4s;
+         } 
         .container3{
             display:flex;
             color: white;
@@ -107,19 +102,23 @@
             </div>
 
             <div class="container2">
-                    <p class="one">HOME</p>
-                    <p class="two">WHO WE ARE</p>
-                    <p class="three">PROGRAM</p>
-                    <p class="four">ABOUT</p>
-                    <p class="five">BLOG</p>
-                    <p class="six">CONTACT US</p>
+                    <p id="one">HOME</p><br>
+                    <p id="two">WHO WE ARE</p>
+                    <p id="three">PROGRAM</p>
+                    <p id="four">ABOUT</p>
+                    <p id="five">BLOG</p>
+                    <p id="six">CONTACT US</p>
             </div>
         
             <div class="container3">
                 <h3>call to: 9849150209</h3>
                 <button id="button"> make a donation</button>
             </div>
-
+            
         </div>
+        <div>
+            
+        </div>
+    </div>    
 </body>
 </html>
